@@ -1,0 +1,35 @@
+{
+  "name": "instgram",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js",
+    "prod": "NODE_ENV=production nodemon server.js",
+    "migrations": "NODE_ENV=production sequelize db:migrate",
+    "seeds": "NODE_ENV=production sequelize db:seed:all",
+    "migrationsundo": "NODE_ENV=production sequelize db:migrate:undo:all"
+  },
+  "author": "Irkenaliyev",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "cors": "^2.8.5",
+    "docker-compose": "^0.24.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.1",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.9.3",
+    "nodemon": "^2.0.22",
+    "passport": "^0.6.0",
+    "passport-jwt": "^4.0.1",
+    "pg": "^8.11.1",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.35.2"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.6.1"
+  }
+}
